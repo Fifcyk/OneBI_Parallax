@@ -1,0 +1,38 @@
+<template name="layoutManager">
+    <div class="header">
+        <a href="http://orion.meteor.com">
+
+        </a>
+        <h1 class="title">Zarządzaj treścią</h1>
+        <p>{{dict 'description'}}</p>
+
+        <p class="add">
+            <ul>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='podejscie'}}">
+                    Nasze podejście
+                    </a>
+                </li>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='aktualnosci'}}">
+                    Aktualności
+                    </a>
+                </li>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='uslugi'}}">
+                    Usługi
+                    </a>
+                </li>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='partnerzy'}}">
+                    Partnerzy
+                    </a>
+                </li>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='praca'}}">
+                    Praca
+                    </a>
+                </li>
+                <li><a href="{{ pathFor 'adminEntitiesCreate' entity='kontakt'}}">
+                    Kontakt
+                    </a>
+                </li>
+            </ul>
+        </p>
+    </div>
+</template>
