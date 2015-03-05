@@ -50,6 +50,7 @@ localstorage@1.0.2
 logging@1.0.6
 manuelschoebel:ms-seo@0.4.1
 matb33:collection-hooks@0.7.7
+materialize:materialize@0.95.3
 meteor@1.1.4
 meteor-platform@1.2.1
 meteorhacks:inject-initial@1.0.2

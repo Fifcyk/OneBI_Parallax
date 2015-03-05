@@ -14,6 +14,6 @@ orionjs:froala-editor
 orionjs:filesystem
 orionjs:s3
 mrt:bootswatch-yeti
-less
 copleykj:livestamp
 aldeed:tabular
+materialize:materialize
