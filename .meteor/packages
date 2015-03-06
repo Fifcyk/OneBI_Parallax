@@ -15,5 +15,10 @@ orionjs:filesystem
 orionjs:s3
 copleykj:livestamp
 aldeed:tabular
+
 materialize:materialize
+
+aldeed:autoform
+orionjs:summernote
+
 mrt:bootswatch-yeti

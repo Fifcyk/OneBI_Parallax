@@ -25,9 +25,9 @@
 orion.addEntity('aktualnosci', {
     title: {
         type: String,
-        label: "Tytuł"
+        label: 'Tytuł'
     },
-    body:orion.attribute('froala',{
+    body:orion.attribute('summernote',{
         label:'Treść',
         optional:true
     })

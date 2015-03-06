@@ -9,7 +9,7 @@
  * and will add the following permissions
  */
 orion.users.configure({
-    forbidClientAccountCreation: false,
+    forbidClientAccountCreation: true,
     defaultPermissions: [
         'files.folders',
         'files.upload',
