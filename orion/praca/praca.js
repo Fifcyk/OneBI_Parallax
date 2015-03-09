@@ -31,7 +31,7 @@
         }
     }
 ); */
-orion.addEntity('praca', {
+/*orion.addEntity('praca', {
 
         title: {
             type: String,
@@ -69,4 +69,28 @@ orion.addEntity('praca', {
             {data:'body',title:'Treść'}
         ]
     }
+);*/
+orion.addEntity('praca', {
+
+    title: {
+        type: String,
+        label: 'Stanowisko',
+        optional: false
+    },
+        body:orion.attribute('summernote',{
+            label:'Treść',
+            optional:true
+        })},
+
+
+        {
+            icon: 'bookmark',
+            sidebarName: 'Praca',
+            pluralName: 'Praca',
+            singularName: 'pozycję',
+            tableColumns: [
+                { data:'title', title: 'Stanowisko' },
+                {data:'body',title:'Treść'}
+            ]
+        }
 );

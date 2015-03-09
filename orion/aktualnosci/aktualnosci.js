@@ -25,7 +25,8 @@
 orion.addEntity('aktualnosci', {
     title: {
         type: String,
-        label: 'Tytuł'
+        label: 'Tytuł',
+        optional:false
     },
     body:orion.attribute('summernote',{
         label:'Treść',
@@ -35,7 +36,7 @@ orion.addEntity('aktualnosci', {
     icon: 'bookmark',
     sidebarName: 'Aktualności',
     pluralName: 'Aktualności',
-    singularName: 'Pozycja aktulaności',
+    singularName: 'pozycja aktualności',
     tableColumns: [
         { data:'title', title: 'Tytuł' },
         {data:'body',title:'Treść'}

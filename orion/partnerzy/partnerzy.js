@@ -2,42 +2,47 @@ orion.addEntity('partnerzy', {
 
         title: {
             type: String,
-            label: 'Tytuł'
+            label: 'Partner',
+            optional:false
         },
         body:orion.attribute('summernote',{
             label:'Treść',
             optional:true
-        }),
+        })},
 
-        items: {
-            type: Array,
-            optional: true,
-            label:'Partnerzy'
-        },
-        "items.$": {
-            type: Object
-        },
-        "items.$.name": {
-            type: String,
-            label:'Nazwa partnera',
-            optional:false
-        },
-        "items.$.bodyItem": orion.attribute('summernote',{
-            label:'Opis',
-            optional:true
-        })
-    },
-    {
-        icon: 'bookmark',
-        sidebarName: 'Partnerzy',
-        pluralName: 'Partnerzy',
-        singularName: 'Pozycje',
-        tableColumns: [
-            { data:'title', title: 'Tytuł' },
-            {data:'body',title:'Treść'}
-        ]
-    }
+
+        {
+            icon: 'bookmark',
+            sidebarName: 'Partnerzy',
+            pluralName: 'Partnerzy',
+            singularName: 'pozycję',
+            tableColumns: [
+                { data:'title', title: 'Partner' },
+                {data:'body',title:'Treść'}
+            ]
+        }
 );
+
+/*
+ items: {
+ type: Array,
+ optional: true,
+ label:'Partnerzy'
+ },
+ "items.$": {
+ type: Object
+ },
+ "items.$.name": {
+ type: String,
+ label:'Nazwa partnera',
+ optional:false
+ },
+ "items.$.bodyItem": orion.attribute('summernote',{
+ label:'Opis',
+ optional:true
+ })
+ },
+ */
 
 /*TabularTables = {};
 

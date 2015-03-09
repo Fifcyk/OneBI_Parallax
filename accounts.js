@@ -9,21 +9,55 @@
  * and will add the following permissions
  */
 orion.users.configure({
-    forbidClientAccountCreation: true,
+    forbidClientAccountCreation: false,
     defaultPermissions: [
         'files.folders',
         'files.upload',
         'files.delete',
         'dictionary.public',
-        'entity.podejscie.personal',
-        'entity.aktualnosci.personal',
-        'entity.uslugi.personal',
-        'entity.partnerzy.personal',
-        'entity.praca.personal',
-        'entity.kontakt.personal'
+
+        'entity.podejscie.all',
+        'entity.approach.all',
+
+        'entity.aktualnosci.all',
+        'entity.news.all',
+
+        'entity.uslugi.all',
+        'entity.uslugiPozycje.all',
+
+        'entity.services.all',
+        'entity.servicesPositions.all',
+
+        'entity.partnerzy.all',
+        'entity.partners.all',
+
+        'entity.praca.all',
+        'entity.jobs.all',
+
+        'entity.kontakt.all',
+        'entity.contact.all'
          // Users can create, update, and delete posts created by them
     ]
 })
+
+   /*  Meteor.users.allow({
+     'update': function(userId, doc, fields, modifier) {
+     var user = Meteor.users.findOne(userId);
+     if (doc._id != userId && user.isAdmin) {
+     var allowed = ['isAdmin', 'permissions']
+     if (_.isEqual(_.union(allowed, fields), allowed)) {
+     return true;
+     }
+     }
+
+     return false
+     },
+     'remove': function(userId, doc) {
+     var user = Meteor.users.findOne(userId);
+     return userId && doc._id != userId  && user.isAdmin;
+     }
+     });*/
+
 
 if (Meteor.isServer) {
     /**
