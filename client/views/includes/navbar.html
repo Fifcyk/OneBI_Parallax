@@ -1,13 +1,39 @@
 <template name="navbar">
-    <nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#"><i class="mdi-action-search"></i></a></li>
-            <li><a href="#"><i class="mdi-action-view-module"></i></a></li>
-            <li><a href="#"><i class="mdi-navigation-refresh"></i></a></li>
-            <li><a href="#"><i class="mdi-navigation-more-vert"></i></a></li>
-        </ul>
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="top-nav amber darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <a href="" class="brand-logo"><!--<img src="onebi-logo.png">-->OneBI</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href=""><i class="mdi-action-search left"></i>OneBI</a></li>
+                            <li><a href="#grid-uslugi"><i class="mdi-action-view-module right"></i>Usługi</a></li>
+                            <li><a href="#"><i class="mdi-action-view-module right"></i>JavaScript</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-</nav>
+    <div class="navbar-fixed hide-on-large-only" style="height: 122px;">
+        <nav class="top-nav amber darken-4" style="height: 122px;">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <a href="" class="brand-logo" style="font-size: 40px; margin-top: 5px"><!--<img src="onebi-logo.png">-->OneBI</a>
+                        <a href="#" data-activates="mobile-menu" class="button-collapse"  style="margin-top: 30px;">
+                            <i class="mdi-navigation-menu" style="font-size: 40px;"></i>
+                        </a>
+
+                        <ul class="side-nav" id="mobile-menu">
+                            <li ><a href="" class="waves-effect waves-orange">OneBI</a></li>
+                            <li class="logo bold"><a href="#grid-uslugi" class="waves-effect waves-orange">Usługi</a></li>
+                            <li class="bold"><a href="#" class="waves-effect waves-orange">Javascript</a></li>
+                            <li class="bold"><a href="#" class="waves-effect waves-orange">Mobilne</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </template>

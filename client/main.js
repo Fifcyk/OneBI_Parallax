@@ -3,4 +3,5 @@
  */
 Template.stronaGlowna.rendered = function() {
     $('.parallax').parallax();
+    $('.button-collapse').sideNav({menuWidth: 400, activationWidth: 70});
 }
