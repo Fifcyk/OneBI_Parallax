@@ -3,5 +3,6 @@
  */
 Template.stronaGlowna.rendered = function() {
     $('.parallax').parallax();
-    $('.button-collapse').sideNav({menuWidth: 400, activationWidth: 70});
+    $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
+    $('.scrollspy').scrollSpy();
 }
