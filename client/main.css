@@ -11,36 +11,40 @@ nav ul a {
     width: 100%;
 }
 
-.tiny {
-    font-size: 1rem;
-}
-.small {
-    font-size: 2rem;
-}
-.medium {
-    font-size: 4rem;
-}
-.large {
-    font-size: 6rem;
-}
-
 .font50 {
     font-size: 50px;
 }
+.font40 {
+    font-size: 40px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+.font13 {
+    font-size: 13px;
+}
 
 .menu-font {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.first-container {
-    min-height:200px;
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .containers {
-    min-height:200px;
+    min-height:300px;
 }
 .parallax-container {
+    height: 400px;
+}
+
+.map-container {
+    width: 100%;
     height: 400px;
 }

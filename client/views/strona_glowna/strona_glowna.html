@@ -1,8 +1,8 @@
 <template name="stronaGlowna">
-    <div class="parallax-container" id="naszePodejscie">
+    <div class="section scrollspy parallax-container" id="naszePodejscie">
         <div class="parallax"><img src="background.png"></div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white z-depth-5 containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Nasze podejście</p>
@@ -16,10 +16,10 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container" id="aktualnosci">
+    <div class="section scrollspy parallax-container" id="aktualnosci">
         <div class="parallax"><img src="computer.jpg"></div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white z-depth-5 containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Aktualności</p>
@@ -31,10 +31,10 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container" id="uslugi">
+    <div class="section scrollspy parallax-container" id="uslugi">
         <div class="parallax"><img src="background.png"></div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Usługi</p>
@@ -46,10 +46,15 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container" id="kontakt">
-        <div class="parallax"><img src="background.png"></div>
+    <div class="section scrollspy parallax-container" id="kontakt">
+        <!--<div class="parallax">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2443.749408449631!2d21.003043068797002!3d52.22977043117575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1425911692689" width="100%" height="500" frameborder="0" style="border:0"></iframe>
+        </div>-->
+        <div class="map-container">
+            {{> googleMap name="onebiMap" options=onebiMapOptions}}
+        </div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white z-depth-5 containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Kontakt</p>
@@ -61,10 +66,10 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container" id="partnerzy">
+    <div class="section scrollspy parallax-container" id="partnerzy">
         <div class="parallax"><img src="background.png"></div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white z-depth-5 containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Partnerzy</p>
@@ -76,10 +81,10 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container"  id="praca">
+    <div class="section scrollspy parallax-container"  id="praca">
         <div class="parallax"><img src="background.png"></div>
     </div>
-    <div class="section scrollspy white z-depth-5 containers">
+    <div class="white containers">
         <div class="container">
             <div class="hide-on-med-and-down">
                 <p>Praca</p>
