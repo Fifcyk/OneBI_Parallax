@@ -28,10 +28,15 @@ orion.addEntity('aktualnosci', {
         label: 'Tytuł',
         optional:false
     },
-    body:orion.attribute('summernote',{
+    image: orion.attribute('file', {
+        label: 'Ikonka',
+        optional: true
+    }),
+    body:orion.attribute('froala',{
         label:'Treść',
         optional:true
     })
+
 }, {
     icon: 'bookmark',
     sidebarName: 'Aktualności',
@@ -39,6 +44,7 @@ orion.addEntity('aktualnosci', {
     singularName: 'pozycja aktualności',
     tableColumns: [
         { data:'title', title: 'Tytuł' },
-        {data:'body',title:'Treść'}
+        {data:'body',title:'Treść'},
+        orion.attributeColumn('file', 'image', 'Image'),
     ]
 });

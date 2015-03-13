@@ -53,15 +53,13 @@ hr {
 
 #owl-demo .item{
     background: orange;
-    padding-top: 15px;
+    padding-top: 0px;
     margin: 10px;
     color: #FFF;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 15px;
     text-align: center;
     height: 300px;
-
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     cursor: pointer;
     display: block;
@@ -70,9 +68,6 @@ hr {
 {
     background: orange;
     text-decoration: none;
-}
-h5{
-    padding-top: 10px;
 }
 .dataC
 {
@@ -141,4 +136,13 @@ h5{
     top: 100px;
     right: 10px;
     padding: 0px;
+    color:white;
 }
+.image{
+    height: 200px;
+}
+.card{
+    min-height: 100px;
+    display: none;
+}
+
