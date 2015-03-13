@@ -145,4 +145,9 @@ hr {
     min-height: 100px;
     display: none;
 }
+.collapsible-header{
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
 

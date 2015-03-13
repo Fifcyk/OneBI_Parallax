@@ -5,6 +5,7 @@ orion.addEntity('uslugi', {
     body:orion.attribute('summernote',{
         label:'Opis'
     })
+
 }, {
     icon: 'bookmark',
     sidebarName: 'Usługi',
@@ -12,5 +13,6 @@ orion.addEntity('uslugi', {
     singularName: 'usługa',
     tableColumns: [
         {data:'body',title:'Treść'}
+
     ]
 });

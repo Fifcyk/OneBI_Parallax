@@ -1,0 +1,19 @@
+<template name="uslugiList">
+    <ul class="collapsible" data-collapsible="accordion" style="margin-top: 70px;">
+        {{#each usluga}}
+            <li>
+                {{> uslugiItem}}
+            </li>
+        {{/each}}
+    </ul>
+</template>
+
+<template name="uslugiItem">
+    <div class="collapsible-header grey darken-2 white-text">
+        <i class="{{ikona}}" style="font-size: 30px;"></i>{{{title}}}
+    </div>
+    <div class="collapsible-body white">
+        <span>{{{body}}}
+        </span>
+    </div>
+</template>
