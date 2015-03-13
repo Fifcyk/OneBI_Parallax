@@ -80,3 +80,65 @@ h5{
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.btnPL {
+    background-image: url('flaga_polski.jpg');
+    background-position: center;
+    background-size: 100px;
+    position: fixed;
+    bottom: 65px;
+    right: 10px
+}
+
+.btnEN {
+    background-image: url('flaga_anglii.gif');
+    background-position: center;
+    background-size: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+.btnLngPl {
+    text-align: center;
+    font-size: 10px;
+    width: 30px;
+    height: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 0px;
+}
+
+.btnLngEn {
+    text-align: center;
+    font-size: 10px;
+    width: 30px;
+    height: 15px;
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    padding: 0px;
+}
+
+.btnLngPlMobile {
+    text-align: center;
+    font-size: 13px;
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    padding: 0px;
+}
+
+.btnLngEnMobile {
+    text-align: center;
+    font-size: 13px;
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    padding: 0px;
+}

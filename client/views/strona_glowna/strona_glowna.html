@@ -1,36 +1,22 @@
 <template name="stronaGlowna">
     <div class="section scrollspy parallax-container" id="naszePodejscie">
-        <div class="parallax"><img src="background.png"></div>
+        <div class="parallax"><img src="content_background.jpg" style="width: 100%"></div>
+        {{>podejscieItem}}
     </div>
     <div class="white z-depth-5 containers">
         <div class="container">
-            <div class="hide-on-med-and-down">
-                <p>Nasze podejście</p>
-                <p class="grey-text text-darken-3 lighten-3">{{>podejscieItem}}</p>
-            </div>
-            <div class="hide-on-large-only font50">
-                <p>Nasze podejście</p>
-                <p class="grey-text text-darken-3 lighten-3">{{>podejscieItem}}</p>
-            </div>
-        </div>
-    </div>
-    <div class="section scrollspy parallax-container" id="aktualnosci">
-        <div class="parallax"><img src="computer.jpg"></div>
-    </div>
-    <div class="white z-depth-5 containers">
-        <div class="container">
-            <div class="hide-on-med-and-down">
+            <div class="hide-on-med-and-down section scrollspy" id="aktualnosci">
                 <p>Aktualności</p>
                 <p class="grey-text text-darken-3 lighten-3">{{>aktualnosciList}}</p>
             </div>
-            <div class="hide-on-large-only font50">
-                <p>Aktualności</p>khgkhghjg
+            <div class="hide-on-large-only font30">
+                <p>Aktualności</p>
                 <p class="grey-text text-darken-3 lighten-3">{{>aktualnosciList}}</p>
             </div>
         </div>
     </div>
     <div class="section scrollspy parallax-container" id="uslugi">
-        <div class="parallax"><img src="background.png"></div>
+        <div class="parallax"><img src="computer.jpg"></div>
     </div>
     <div class="white containers">
         <div class="container">
@@ -38,34 +24,29 @@
                 <p>Usługi</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Usługi</p>
             </div>
-            <div class="hide-on-large-only font50">
+            <div class="hide-on-large-only font30">
                 <p>Usługi</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Usługi</p>
             </div>
         </div>
     </div>
     <div class="section scrollspy parallax-container" id="kontakt">
-        <!--<div class="parallax">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2443.749408449631!2d21.003043068797002!3d52.22977043117575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1425911692689" width="100%" height="500" frameborder="0" style="border:0"></iframe>
-        </div>-->
         <div class="map-container">
             {{> googleMap name="onebiMap" options=onebiMapOptions}}
         </div>
     </div>
-    <div class="white z-depth-5 containers">
+    <div class="white z-depth-5">
         <div class="container">
             <div class="hide-on-med-and-down">
-                <p>Kontakt</p>
-                <p class="grey-text text-darken-3 lighten-3"><div class=body>{{>kontaktList}}</div></p>
+                <span class="grey-text text-darken-3 lighten-3">{{>kontaktList}}</span>
             </div>
-            <div class="hide-on-large-only font50">
-                <p>Kontakt</p>
-                <p class="grey-text text-darken-3 lighten-3"><div class=body>{{>kontaktList}}</div></p>
+            <div class="hide-on-large-only font30">
+                <span class="grey-text text-darken-3 lighten-3">{{>kontaktList}}</span>
             </div>
         </div>
     </div>
     <div class="section scrollspy parallax-container" id="partnerzy">
-        <div class="parallax"><img src="background.png"></div>
+        <div class="parallax"><img src="content_background.jpg"></div>
     </div>
     <div class="white z-depth-5 containers">
         <div class="container">
@@ -73,14 +54,14 @@
                 <p>Partnerzy</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Partnerzy</p>
             </div>
-            <div class="hide-on-large-only font50">
+            <div class="hide-on-large-only font30">
                 <p>Partnerzy</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Partnerzy</p>
             </div>
         </div>
     </div>
     <div class="section scrollspy parallax-container"  id="praca">
-        <div class="parallax"><img src="background.png"></div>
+        <div class="parallax"><img src="content_background.jpg"></div>
     </div>
     <div class="white containers">
         <div class="container">
@@ -88,7 +69,7 @@
                 <p>Praca</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Praca</p>
             </div>
-            <div class="hide-on-large-only font50">
+            <div class="hide-on-large-only font30">
                 <p>Praca</p>
                 <p class="grey-text text-darken-3 lighten-3">Tutaj treść Praca</p>
             </div>

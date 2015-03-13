@@ -30,16 +30,37 @@ Template.stronaGlowna.helpers({
 });
 
 Template.stronaGlowna.created = function() {
-    // We can use the `ready` callback to interact with the map API once the map is ready.
     GoogleMaps.ready('onebiMap', function(map) {
-        // Add a marker to the map once it's ready
+        var oddzialyOnebi = [
+            ['OneBI oddział Warszawa', 52.2300204, 21.0043098, 1],
+            ['OneBI oddział Nowy Sącz', 49.5917564,20.6775655, 2]
+        ];
+
+        var myLatLng = new google.maps.LatLng(oddzialyOnebi[0][1], oddzialyOnebi[0][2]);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(52.2300204, 21.0043098),
-            map: map.instance
+            position: myLatLng,
+            map: map.instance,
+            title: oddzialyOnebi[0][0],
+            zIndex: oddzialyOnebi[0][3],
+            animation: google.maps.Animation.DROP
         });
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(49.5917564,20.6775655),
-            map: map.instance
+        var myLatLng1 = new google.maps.LatLng(oddzialyOnebi[1][1], oddzialyOnebi[1][2]);
+        var marker1 = new google.maps.Marker({
+            position: myLatLng1,
+            map: map.instance,
+            title: oddzialyOnebi[1][0],
+            zIndex: oddzialyOnebi[1][3],
+            animation: google.maps.Animation.DROP
+        });
+        //}
+
+        google.maps.event.addListener(marker, 'click', function() {
+            map.instance.setZoom(14);
+            map.instance.setCenter(marker.getPosition());
+        });
+        google.maps.event.addListener(marker1, 'click', function() {
+            map.instance.setZoom(14);
+            map.instance.setCenter(marker1.getPosition());
         });
     });
 };
