@@ -1,0 +1,16 @@
+<template name="pracaList">
+    <ul class="collection collectionPraca" style="margin-top: 70px;">
+        {{#each stanowisko}}
+            <a href="#modal1" style="text-transform: none" class="collection-item waves-effect waves-light btn modal-trigger grey darken-2 white-text">
+                {{{title}}}
+            </a>
+            <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;">
+
+                <h4>{{{titleC}}}</h4>
+                    <p>{{{bodyC}}}</p>
+
+            </div>
+        {{/each}}
+    </ul>
+</template>
+

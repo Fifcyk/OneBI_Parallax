@@ -148,11 +148,15 @@ hr {
     padding-left: 20px;
     padding-top: 10px;
 }
-#kontenerUslugi{
-    background-color: blueviolet;
-    margin:0em;
+
+ul .p{
+     height: 20px;
 }
-#kontenerUslugi .p{
-    line-height: 200px;
+
+.collectionPraca{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
 

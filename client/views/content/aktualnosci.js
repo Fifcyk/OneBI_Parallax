@@ -90,8 +90,6 @@ Template.aktualnosciList.events({
             Session.set('titlee',
                 orion.entities.aktualnosci.collection.findOne({_id:this._id}).title);
 
-           // var $this=$(this);
-           // $this.css("visibility",'visible');
             $("#kontenerAktualnosci").show();
         }
     });
