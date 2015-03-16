@@ -49,8 +49,6 @@ hr {
     height: 400px;
 }
 
-
-
 #owl-demo .item{
     background: orange;
     padding-top: 0px;
@@ -141,7 +139,7 @@ hr {
 .image{
     height: 200px;
 }
-.card{
+#kontenerAktualnosci{
     min-height: 100px;
     display: none;
 }
@@ -149,5 +147,12 @@ hr {
     height: 50px;
     padding-left: 20px;
     padding-top: 10px;
+}
+#kontenerUslugi{
+    background-color: blueviolet;
+    margin:0em;
+}
+#kontenerUslugi .p{
+    line-height: 200px;
 }
 
