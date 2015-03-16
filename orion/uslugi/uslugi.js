@@ -2,7 +2,7 @@
  * Created by marzena on 04.03.15.
  */
 orion.addEntity('uslugi', {
-    body:orion.attribute('summernote',{
+    body:orion.attribute('froala',{
         label:'Opis'
     })
 
