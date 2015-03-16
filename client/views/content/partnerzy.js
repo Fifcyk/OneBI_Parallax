@@ -1,5 +1,5 @@
 Template.partnerzyList.helpers({
-    partnerzy: function()
+    partnerzyLista: function()
     {
         return orion.entities.partnerzy.collection.find();
     }
