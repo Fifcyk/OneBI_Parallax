@@ -25,7 +25,6 @@ Template.aktualnosciList.helpers({
     }
 });
 Template.aktualnosciList.rendered = function() {
-
     var owl = $("#owl-demo");
 
     owl.owlCarousel({
@@ -41,44 +40,9 @@ Template.aktualnosciList.rendered = function() {
        // itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
-
-
-
     });
-  /*  $('.link').on('click', function(event){
-        var $this = $(this);
+};
 
-
-        alert("Id obiektu"+$this.title);
-        Session.set('titlee',
-            orion.entities.aktualnosci.collection.findOne({_id:this._id}).title);
-
-
-        if($this.hasClass('clicked')){
-            $this.removeAttr('main').removeClass('clicked');
-           // alert("if");
-        } else{
-            $this.css('background','red').addClass('clicked');
-
-
-        }
-    });*/
-
-    // Custom Navigation Events
-   /* $(".next").click(function(){
-        owl.trigger('owl.next');
-    })
-    $(".prev").click(function(){
-        owl.trigger('owl.prev');
-    })
-    $(".play").click(function(){
-        owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-    })*/
-   // $('#modal1').click(function(){
-  //      owl.trigger('owl.stop');
-  //  })
-
-},
 Template.aktualnosciList.events({
         'click .item': function(e)
         {

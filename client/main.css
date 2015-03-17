@@ -50,7 +50,6 @@ hr {
 }
 
 #owl-demo .item{
-    background: orange;
     padding-top: 0px;
     margin: 10px;
     color: #FFF;
@@ -67,6 +66,9 @@ hr {
     background: orange;
     text-decoration: none;
 }
+/*.owl-carousel {
+    display: block;
+}*/
 .dataC
 {
     text-align: right;
@@ -149,14 +151,13 @@ hr {
     padding-top: 10px;
 }
 
-ul .p{
-     height: 20px;
+.collapsible-body p {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-
 .collectionPraca{
     width:50%;
     margin-left: 25%;
     margin-right: 25%;
 }
-
 

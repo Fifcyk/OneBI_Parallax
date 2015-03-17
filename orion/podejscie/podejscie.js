@@ -2,6 +2,11 @@
  * Created by marzena on 04.03.15.
  */
 orion.addEntity('podejscie',{
+    title: {
+        type: String,
+        label: 'Tytuł',
+        optional:false
+    },
     body:orion.attribute('summernote',{
         label:'Treść'
     })
@@ -12,7 +17,8 @@ orion.addEntity('podejscie',{
         pluralName: 'Podejście',
         singularName: 'podejście',
         tableColumns: [
-            {data:'body',title:'Treść'}
+            {data:'body',title:'Treść'},
+            {data:'title',title:'Tytuł'}
         ]
     }
 );

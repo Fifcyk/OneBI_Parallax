@@ -1,5 +1,5 @@
 <template name="uslugiList">
-    <ul class="collapsible" data-collapsible="accordion" style="margin-top: 70px;">
+    <ul class="collapsible" data-collapsible="accordion">
         {{#each usluga}}
             <li>
                 {{> uslugiItem}}
@@ -12,7 +12,13 @@
     <div class="collapsible-header grey darken-2 white-text">
         <i class="{{ikona}}" style="font-size: 30px;"></i>{{{title}}}
     </div>
-    <div class="collapsible-body white" id="kontenerUslugi" style="margin: 0px;line-height: 0px">
+    <div class="collapsible-body white" id="kontenerUslugi">
         {{{body}}}
+    </div>
+</template>
+
+<template name="uslugiOpis">
+    <div class="card-panel white " style="width: 50%; min-height: 260px; margin-top: 70px; margin-left: 25%; margin-right: 25%">
+        {{{uslugaOpis}}}
     </div>
 </template>
