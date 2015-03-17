@@ -1,14 +1,13 @@
 <template name="pracaList">
-    <ul class="collection collectionPraca" style="margin-top: 70px;">
+    <ul class="collection" style="margin-top: 50px; width: 80%; margin-left: 10%; margin-right: 10%;">
         {{#each stanowisko}}
-            <a href="#modal1" style="text-transform: none" class="collection-item waves-effect waves-light btn modal-trigger grey darken-2 white-text">
+            <a href="#modal1" style="text-transform: none;text-align: left; height: 40px; padding-top: 10px" class="collection-item waves-effect waves-light btn modal-trigger grey darken-2 white-text">
                 {{{title}}}
+                <i class="mdi-content-send right"></i>
             </a>
-            <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;">
-
-                <h4>{{{titleC}}}</h4>
-                <p>{{{bodyC}}}</p>
-
+            <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <h4 class="modal-title">{{{titleC}}}</h4>
+                    <p>{{{bodyC}}}</p>
             </div>
         {{/each}}
     </ul>

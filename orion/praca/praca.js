@@ -77,7 +77,7 @@ orion.addEntity('praca', {
         label: 'Stanowisko',
         optional: false
     },
-        body:orion.attribute('summernote',{
+        body:orion.attribute('froala',{
             label:'Treść',
             optional:true
         })},

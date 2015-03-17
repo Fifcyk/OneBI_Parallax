@@ -49,26 +49,6 @@ hr {
     height: 400px;
 }
 
-#owl-demo .item{
-    padding-top: 0px;
-    margin: 10px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    text-align: center;
-    height: 300px;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    display: block;
-}
-#owl-demo .item:hover
-{
-    background: orange;
-    text-decoration: none;
-}
-/*.owl-carousel {
-    display: block;
-}*/
 .dataC
 {
     text-align: right;
@@ -138,9 +118,7 @@ hr {
     padding: 0px;
     color:white;
 }
-.image{
-    height: 200px;
-}
+
 #kontenerAktualnosci{
     min-height: 100px;
     display: none;
@@ -154,11 +132,6 @@ hr {
 .collapsible-body p {
     padding-top: 0px;
     padding-bottom: 0px;
-}
-.collectionPraca{
-    width:50%;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 
 .slider ul.indicators li.indicator-item.active {
