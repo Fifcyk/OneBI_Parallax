@@ -161,3 +161,6 @@ hr {
     margin-right: 25%;
 }
 
+.slider ul.indicators li.indicator-item.active {
+    background-color: orangered;
+}

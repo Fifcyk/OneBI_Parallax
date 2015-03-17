@@ -7,15 +7,14 @@ Template.stronaGlowna.rendered = function() {
     $('.parallax').parallax();
     $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
     $('.scrollspy').scrollSpy();
+    $('.slider').slider({full_width: true});
     document.title = "OneBI";
-}
+};
 
 Template.stronaGlowna.helpers({
 
     onebiMapOptions: function() {
-        // Make sure the maps API has loaded
         if (GoogleMaps.loaded()) {
-            // Map initialization options
             return {
                 center: new google.maps.LatLng(51.7300204, 21.0043098),
                 zoom: 6,
@@ -55,7 +54,6 @@ Template.stronaGlowna.created = function() {
             zIndex: oddzialyOnebi[1][3],
             animation: google.maps.Animation.DROP
         });
-        //}
 
         google.maps.event.addListener(marker, 'click', function() {
             map.instance.setZoom(14);

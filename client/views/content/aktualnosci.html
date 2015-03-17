@@ -1,28 +1,33 @@
 <template name="aktualnosciList">
-    <div id="owl-demo" class="owl-carousel owl-theme">
-        {{#each aktualnosci}}
-            <a class="item link amber darken-4">
+    <div class="slider">
+        <ul class="slides">
+            {{#each aktualnosci}}
                 {{> aktualnosciItem}}
-            </a>
-        {{/each}}
+            {{/each}}
+        </ul>
     </div>
-    <div class="card grey darken-2 " id="kontenerAktualnosci">
-        <div class="card-content white-text">
-            <span class="card-title">{{{titlee}}}</span>
-            <p>{{{bodyy}}}</p>
+    <div class="container">
+        <div class="card white" id="kontenerAktualnosci">
+            <div class="card-content">
+                <span class="card-title">{{{titlee}}}</span>
+                <p>{{{bodyy}}}</p>
+            </div>
         </div>
     </div>
 </template>
 
 <template name="aktualnosciItem">
-    <div class="image"
-        style="{{#if image}}
-        background-image: url({{imagee}})
-        {{/ if }}">
-        <div class="dataC">{{{createdAt}}}</div>
-    </div>
-    <div class="caption center-align">
-        <h3>{{{title}}}</h3>
-    </div>
-
+    <li>
+        <a class="item link">
+        {{#if imagee}}
+            <img src="gold.jpg">
+        {{else}}
+            <img style="background-color: white">
+        {{/if}}
+        <div class="caption right-align">
+            <h3>{{{title}}}</h3>
+            <h5 class="light grey-text text-lighten-3">{{{createdAt}}}</h5>
+        </div>
+        </a>
+    </li>
 </template>
