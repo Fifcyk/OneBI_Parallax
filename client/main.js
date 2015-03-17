@@ -7,7 +7,7 @@ Template.stronaGlowna.rendered = function() {
     $('.parallax').parallax();
     $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
     $('.scrollspy').scrollSpy();
-    $('.slider').slider({full_width: true});
+    $('.slider').slider({full_width: true},{interval: 1000},{transition: 600});
     document.title = "OneBI";
 };
 

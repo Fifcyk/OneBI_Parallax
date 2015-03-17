@@ -6,6 +6,7 @@
             {{/each}}
         </ul>
     </div>
+    {{#if bodyy}}
     <div class="container">
         <div class="card white" id="kontenerAktualnosci">
             <div class="card-content">
@@ -14,6 +15,7 @@
             </div>
         </div>
     </div>
+    {{/if}}
 </template>
 
 <template name="aktualnosciItem">
@@ -21,13 +23,18 @@
         <a class="item link">
         {{#if imagee}}
             <img src="gold.jpg">
+            <div class="caption right-align">
+                <h3>{{{title}}}</h3>
+                <h5 class="light">{{{createdAt}}}</h5>
+            </div>
         {{else}}
             <img style="background-color: white">
+            <div class="caption right-align">
+                <h3 class="black-text">{{{title}}}</h3>
+                <h5 class="light black-text">{{{createdAt}}}</h5>
+            </div>
         {{/if}}
-        <div class="caption right-align">
-            <h3>{{{title}}}</h3>
-            <h5 class="light grey-text text-lighten-3">{{{createdAt}}}</h5>
-        </div>
+
         </a>
     </li>
 </template>

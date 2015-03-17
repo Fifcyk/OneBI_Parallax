@@ -80,12 +80,10 @@ reactive-dict@1.0.5
 reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
-richsilv:owl-carousel@0.1.0
 routepolicy@1.0.4
 service-configuration@1.0.3
 session@1.0.5
 sha@1.0.2
-shcherbin:slickjs@1.4.1
 softwarerero:accounts-t9n@1.0.6
 spacebars@1.0.5
 spacebars-compiler@1.0.4

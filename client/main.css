@@ -137,3 +137,7 @@ hr {
 .slider ul.indicators li.indicator-item.active {
     background-color: orangered;
 }
+/*
+.slider ul.slides li .caption {
+    color: black;
+}*/
