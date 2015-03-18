@@ -5,7 +5,7 @@ orion.addEntity('jobs', {
             label: 'Job position',
             optional: false
         },
-        body:orion.attribute('summernote',{
+        body:orion.attribute('froala',{
             label:'Description',
             optional:true
         })

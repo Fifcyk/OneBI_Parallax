@@ -5,7 +5,7 @@ orion.addEntity('partners', {
             label: 'Partner',
             optional:false
         },
-        body:orion.attribute('summernote',{
+        body:orion.attribute('froala',{
             label:'Body',
             optional:true
         })},

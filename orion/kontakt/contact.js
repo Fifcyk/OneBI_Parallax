@@ -1,5 +1,5 @@
 orion.addEntity('contact',{
-        body:orion.attribute('summernote',{
+        body:orion.attribute('froala',{
             label:'Body',
             optional:false
         })

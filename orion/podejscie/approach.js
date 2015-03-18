@@ -1,11 +1,10 @@
 orion.addEntity('approach',{
-
         title: {
             type: String,
             label: 'Title',
             optional:false
         },
-        body:orion.attribute('summernote',{
+        body:orion.attribute('froala',{
             label:'Description'
         })
     },

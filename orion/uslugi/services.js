@@ -1,5 +1,5 @@
 orion.addEntity('services', {
-    body:orion.attribute('summernote',{
+    body:orion.attribute('froala',{
         label:'Description'
     })
 }, {

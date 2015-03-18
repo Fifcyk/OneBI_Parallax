@@ -7,7 +7,7 @@ orion.addEntity('podejscie',{
         label: 'Tytuł',
         optional:false
     },
-    body:orion.attribute('summernote',{
+    body:orion.attribute('froala',{
         label:'Treść'
     })
     },

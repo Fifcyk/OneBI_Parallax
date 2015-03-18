@@ -29,7 +29,7 @@ orion.addEntity('aktualnosci', {
         optional:false
     },
     image: orion.attribute('file', {
-        label: 'Ikonka',
+        label: 'Grafika',
         optional: true
     }),
     body:orion.attribute('froala',{
@@ -45,6 +45,6 @@ orion.addEntity('aktualnosci', {
     tableColumns: [
         { data:'title', title: 'Tytuł' },
         {data:'body',title:'Treść'},
-        orion.attributeColumn('file', 'image', 'Image'),
+        orion.attributeColumn('file', 'image', 'Grafika'),
     ]
 });
