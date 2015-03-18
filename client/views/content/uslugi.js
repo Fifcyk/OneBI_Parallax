@@ -1,7 +1,13 @@
 Template.uslugiList.helpers({
     usluga: function()
     {
-        return orion.entities.uslugiPozycje.collection.find();
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.uslugiPozycje.collection.find();
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.servicesPositions.collection.find();
+        }
     }
 });
 Template.uslugiItem.helpers({
@@ -14,7 +20,13 @@ Template.uslugiItem.helpers({
 Template.uslugiOpis.helpers({
     uslugaOpis: function()
     {
-        return orion.entities.uslugi.collection.findOne().body;
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.uslugi.collection.findOne().body;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.services.collection.findOne().body;
+        }
     }
 });
 Template.aktualnosciList.rendered = function() {

@@ -1,7 +1,16 @@
 Template.pracaList.helpers({
     stanowisko: function()
     {
-        return orion.entities.praca.collection.find();
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski')
+        {
+            return orion.entities.praca.collection.find();
+        }
+
+        else if(jezyk === 'English')
+        {
+            return orion.entities.jobs.collection.find();
+        }
     },
     titleC:function()
     {
@@ -18,10 +27,10 @@ Template.pracaList.rendered=function()
     $(document).ready(function(){
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal-trigger').leanModal({
-                dismissible: false, // Modal can be dismissed by clicking outside of the modal
-                opacity: .55, // Opacity of modal background
-                in_duration: 300, // Transition in duration
-                out_duration: 200, // Transition out duration
+                //dismissible: false, // Modal can be dismissed by clicking outside of the modal
+                //opacity: .55, // Opacity of modal background
+                //in_duration: 300, // Transition in duration
+                //out_duration: 200, // Transition out duration
                 //   ready: function() { alert('Ready'); }, // Callback for Modal open
                 //  complete: function() { alert('Closed'); } // Callback for Modal close
             }
@@ -44,10 +53,20 @@ Template.pracaList.events({
     'click .collection-item': function (e) {
         e.preventDefault();
         //   alert("Kliknięto!"+this.title+ ".   body="+this.body);
-        Session.set('titleC',
-            orion.entities.praca.collection.findOne({_id: this._id}).title);
-        Session.set('bodyC',
-            orion.entities.praca.collection.findOne({_id: this._id}).body);
-
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski')
+        {
+            Session.set('titleC',
+                orion.entities.praca.collection.findOne({_id: this._id}).title);
+            Session.set('bodyC',
+                orion.entities.praca.collection.findOne({_id: this._id}).body);
+        }
+        else if(jezyk === 'English')
+        {
+            Session.set('titleC',
+                orion.entities.jobs.collection.findOne({_id: this._id}).title);
+            Session.set('bodyC',
+               orion.entities.jobs.collection.findOne({_id: this._id}).body);
+        }
     }
 });

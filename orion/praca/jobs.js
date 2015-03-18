@@ -8,9 +8,8 @@ orion.addEntity('jobs', {
         body:orion.attribute('summernote',{
             label:'Description',
             optional:true
-        })},
-
-
+        })
+    },
     {
         icon: 'bookmark',
         sidebarName: 'Jobs',

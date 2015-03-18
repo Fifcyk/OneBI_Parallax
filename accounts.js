@@ -9,7 +9,7 @@
  * and will add the following permissions
  */
 orion.users.configure({
-    forbidClientAccountCreation: false,
+    forbidClientAccountCreation: true,
     defaultPermissions: [
         'files.folders',
         'files.upload',
@@ -38,7 +38,7 @@ orion.users.configure({
         'entity.contact.all'
          // Users can create, update, and delete posts created by them
     ]
-})
+});
 
    /*  Meteor.users.allow({
      'update': function(userId, doc, fields, modifier) {
