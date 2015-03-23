@@ -2,15 +2,14 @@
  * Created by Fifcyk on 05.03.15.
  */
 Template.stronaGlowna.rendered = function() {
+    $('.slider').slider({
+        full_width: true,
+        interval: 6000,
+        transition: 400
+    });
     $('.parallax').parallax();
     $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
     $('.scrollspy').scrollSpy();
-    $('.slider').slider(
-        {full_width: true,
-        interval: 5000,
-        transition: 600
-        }
-    );
     document.title = "OneBI";
 
     if($.cookie('cookiepolicyinfo') != 'true')
