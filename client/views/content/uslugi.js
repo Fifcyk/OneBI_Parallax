@@ -13,8 +13,16 @@ Template.uslugiList.helpers({
 Template.uslugiItem.helpers({
     ikona:function()
     {
-        var icon=this.ikona;
-        return icon+" orange-text";
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski')
+        {
+            var icon=this.ikona;
+        }
+        else if(jezyk === 'English')
+        {
+            var icon=this.icon;
+        }
+            return icon+" orange-text";
     }
 });
 Template.uslugiOpis.helpers({

@@ -1,23 +1,17 @@
 /**
  * Created by Fifcyk on 05.03.15.
  */
-Template.stronaGlowna.helpers({
-    podejscie: function() {
-        return this.body;
-        // orion.entities.podejscie.collection.findOne().body;
-    },
-    kontakt: function() {
-        return orion.entities.kontakt.collection.findOne().body;
-    }
-});
-
-
 Template.stronaGlowna.rendered = function() {
     $('.parallax').parallax();
     $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
     $('.scrollspy').scrollSpy();
     $('.slider').slider({full_width: true},{interval: 1000},{transition: 600});
     document.title = "OneBI";
+
+    if($.cookie('cookiepolicyinfo') != 'true')
+    {
+        $(".cookiepolicy").show();
+    }
 
 };
 
@@ -45,7 +39,7 @@ Template.stronaGlowna.created = function() {
     Session.set('version', 'Polski');
     GoogleMaps.ready('onebiMap', function(map) {
         var oddzialyOnebi = [
-            ['OneBI oddział Warszawa', 52.2300204, 21.0043098, 1],
+            ['OneBI oddział Warszawa', 52.2279228,21.0074754, 1],
             ['OneBI oddział Nowy Sącz', 49.5917564,20.6775655, 2]
         ];
 
@@ -76,3 +70,14 @@ Template.stronaGlowna.created = function() {
         });
     });
 };
+
+Template.stronaGlowna.events({
+    'click .buttoncookie': function(e)
+    {
+        e.preventDefault();
+        //$.cookie(options.cookie, true);
+        //$(this).parents('.cookiepolicy').remove();
+        $.cookie('cookiepolicyinfo','true');
+        $(".cookiepolicy").hide();
+    }
+});

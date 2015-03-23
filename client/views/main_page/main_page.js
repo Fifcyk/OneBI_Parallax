@@ -8,6 +8,10 @@ Template.mainPage.rendered = function() {
     $('.slider').slider({full_width: true},{interval: 1000},{transition: 600});
     document.title = "OneBI";
 
+    if($.cookie('cookiepolicyinfoEN') != 'true')
+    {
+        $(".cookiepolicy").show();
+    }
 };
 
 Template.mainPage.helpers({
@@ -34,7 +38,7 @@ Template.mainPage.created = function() {
     Session.set('version', 'English');
     GoogleMaps.ready('onebiMap', function(map) {
         var oddzialyOnebi = [
-            ['OneBI oddział Warszawa', 52.2300204, 21.0043098, 1],
+            ['OneBI oddział Warszawa', 52.2279228,21.0074754, 1],
             ['OneBI oddział Nowy Sącz', 49.5917564,20.6775655, 2]
         ];
 
@@ -65,3 +69,14 @@ Template.mainPage.created = function() {
         });
     });
 };
+
+Template.mainPage.events({
+    'click .buttoncookie': function(e)
+    {
+        e.preventDefault();
+        //$.cookie(options.cookie, true);
+        //$(this).parents('.cookiepolicy').remove();
+        $.cookie('cookiepolicyinfoEN','true');
+        $(".cookiepolicy").hide();
+    }
+});

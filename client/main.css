@@ -137,7 +137,31 @@ hr {
 .slider ul.indicators li.indicator-item.active {
     background-color: orangered;
 }
-/*
-.slider ul.slides li .caption {
-    color: black;
-}*/
+
+.cookiepolicy {
+    /*background: #efefef;*/
+    display: none;
+    bottom: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    left: 0;
+    padding: 15px 50px;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    z-index: 10;
+}
+
+.buttoncookie {
+    color: orangered;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+}
+
+
+a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+}
