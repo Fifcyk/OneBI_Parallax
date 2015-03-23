@@ -24,20 +24,22 @@ Template.pracaList.helpers({
 
 Template.pracaList.rendered=function()
 {
-    $(document).ready(function() {
+  //  $(document).ready(function() {
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal({});
-        $(document).ready(function () {
+
             $('#modal1').openModal();
-        });
-        $(document).ready(function () {
+           // $('body').css('overflow', 'hidden')
             $('#modal1').closeModal();
-        });
+          //  $('body').css('overflow', 'auto');
 
         $('.modal-trigger').leanModal(
+           // $('body').css('overflow', 'hidden')
+            { ready: function() {$('body').css('overflow', 'hidden')},
+              complete: function() {$('body').css('overflow', 'auto')}
+            }
         );
-    });
-}
+   // });
+};
 Template.pracaList.events({
     'click .collection-item': function (e) {
         e.preventDefault();
