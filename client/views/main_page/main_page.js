@@ -2,10 +2,14 @@
  * Created by Fifcyk on 11.03.15.
  */
 Template.mainPage.rendered = function() {
+    $('.slider').slider({
+        full_width: true,
+        interval: 6000,
+        transition: 400
+    });
     $('.parallax').parallax();
     $('.button-collapse').sideNav({menuWidth: 600, activationWidth: 210});
     $('.scrollspy').scrollSpy();
-    $('.slider').slider({full_width: true},{interval: 1000},{transition: 600});
     document.title = "OneBI";
 
     if($.cookie('cookiepolicyinfoEN') != 'true')

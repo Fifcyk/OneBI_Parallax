@@ -164,4 +164,5 @@ hr {
 a:hover, a:focus {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
