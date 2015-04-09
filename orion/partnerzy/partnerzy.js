@@ -5,6 +5,10 @@ orion.addEntity('partnerzy', {
             label: 'Partner',
             optional:false
         },
+        image: orion.attribute('file', {
+            label: 'Grafika',
+            optional: true
+        }),
         body:orion.attribute('froala',{
             label:'Treść',
             optional:true

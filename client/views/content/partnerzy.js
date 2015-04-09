@@ -8,5 +8,9 @@ Template.partnerzyList.helpers({
         else if(jezyk === 'English') {
             return orion.entities.partners.collection.find();
         }
+    },
+    imagee:function()
+    {
+        return this.image.url;
     }
 });
