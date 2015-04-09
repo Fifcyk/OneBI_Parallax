@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="177502fc-77c6-425a-ad11-507ae2534c54" name="Default" comment="BS: obsuga plikow">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/filesystem/.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/filesystem" afterPath="$PROJECT_DIR$/packages/filesystem" />
+    <list default="true" id="177502fc-77c6-425a-ad11-507ae2534c54" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b99191e2-e923-4818-b623-bd1aa8c6e1fa" name="Rejected commit: Default" comment="BS" />
@@ -460,7 +458,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428583637139</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="BS: obsuga plikow">
+      <created>1428584738973</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1428584738973</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
