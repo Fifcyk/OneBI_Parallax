@@ -24,7 +24,7 @@ dburles:google-maps
 benjaminrh:jquery-cookie
 
 orionjs:bootstrap
-orionjs:filesystem
 cfs:standard-packages
 cfs:filesystem
 cfs:gridfs
+orionjs:filesystem
