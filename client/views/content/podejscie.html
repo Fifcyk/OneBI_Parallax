@@ -1,23 +1,25 @@
 <template name="podejscieItem">
-    <div class="card amber lighten-3" style="width: 50%; min-height: 260px; margin-top: 70px; margin-left: 25%; margin-right: 25%">
-        <div class="card-image waves-effect waves-block waves-light">
+    <div class="row text-center" style="margin-bottom: 0px">
+        <span class="podejscieMainHeader">{{{tytul}}}</span>
+    </div>
+    <div class="row">
+        <div class="hrPodejscie"></div>
+    </div>
+    <div class="row" style="margin-bottom: 0px">
+        <div class="col s2"><p></p></div>
+        <div class="col s6 white-text"><p>{{{tresc}}}</p></div>
+        <div class="col s1"><p></p></div>
+        <div class="col s3 white-text"><img src="Glowa2.png" class="iconsPodejscie"></div>
 
-        </div>
-        <div class="card-content" style="text-align: center">
-            <br><br>
-            <span class="card-title activator grey-text text-darken-4">
-                {{{tytul}}}
-                <br>
-                <i class="mdi-navigation-expand-less font50"></i>
-            </span>
-        </div>
-        <div class="card-reveal grey darken-2">
-            <p class="white-text">
-                {{{tresc}}}
-            </p>
-            <span class="card-title" style="text-align: center">
-                <i class="mdi-navigation-expand-more font50"></i>
-            </span>
-        </div>
+    </div>
+    <div class="row">
+        <div class="hrPodejscie2"></div>
+    </div>
+    <div class="row"> </div>
+    <div class="row">
+        <div class="col s2"><p></p></div>
+        <div class="col s3 white-text"><img src="Glowa1.png" class="iconsPodejscie"></div>
+        <div class="col s6 white-text"><p>{{{tresc2}}}</p></div>
+        <div class="col s1"><p></p></div>
     </div>
 </template>

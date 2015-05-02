@@ -1,8 +1,3 @@
-/**
- * Created by marzena on 04.03.15.
- */
-
-
 orion.addEntity('news', {
     title: {
         type: String,
@@ -12,6 +7,10 @@ orion.addEntity('news', {
     image: orion.attribute('file', {
         label: 'Image',
         optional: true
+    }),
+    bodyShort:orion.attribute('froala',{
+        label:'Short Description',
+        optional:true
     }),
     body:orion.attribute('froala',{
         label:'Body',
@@ -24,7 +23,7 @@ orion.addEntity('news', {
     singularName: 'news',
     tableColumns: [
         { data:'title', title: 'Title' },
-        {data:'body',title:'Body'},
+        {data:'bodyShort',title:'Body'},
         orion.attributeColumn('file', 'image', 'Image'),
     ]
 });

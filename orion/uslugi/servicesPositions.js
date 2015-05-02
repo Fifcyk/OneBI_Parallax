@@ -10,8 +10,13 @@ orion.addEntity('servicesPositions', {
     icon:{
         type:String,
         label:"Ikona. Wpisz nazwę wybranej ikony " +
-        "z podanej strony: http://materializecss.com/icons.html"
-    }
+        "z podanej strony: http://materializecss.com/icons.html",
+        optional:true
+    },
+    image: orion.attribute('file', {
+        label: 'Graphic',
+        optional: true
+    })
 }, {
     icon: 'bookmark',
     sidebarName: 'Service positions',

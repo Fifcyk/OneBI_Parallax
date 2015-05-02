@@ -1,4 +1,4 @@
-orion.addEntity('uslugi', {
+orion.addEntity('pracaOpis', {
     title: {
         type: String,
         label: 'Tytuł',
@@ -13,9 +13,9 @@ orion.addEntity('uslugi', {
 
 }, {
     icon: 'bookmark',
-    sidebarName: 'Usługi',
-    pluralName: 'Usługi',
-    singularName: 'usługa',
+    sidebarName: 'Praca Opis',
+    pluralName: 'Praca Opis',
+    singularName: 'praca',
     tableColumns: [
         {data:'title',title:'Tytuł'},
         {data:'body',title:'Opis'},

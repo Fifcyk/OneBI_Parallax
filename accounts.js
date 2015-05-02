@@ -35,7 +35,19 @@ orion.users.configure({
         'entity.jobs.all',
 
         'entity.kontakt.all',
-        'entity.contact.all'
+        'entity.contact.all',
+
+        'entity.header.all',
+        'entity.headerEN.all',
+
+        //'entity.aktualnosciOpis.all',
+        //'entity.newsDescription.all',
+
+        'entity.partnerzyOpis.all',
+        'entity.partnersDescription.all',
+
+        'entity.pracaOpis.all',
+        'entity.jobsDescription.all'
          // Users can create, update, and delete posts created by them
     ]
 });

@@ -1,53 +1,132 @@
 <template name="navbarEN">
-    <div class="navbar-fixed hide-on-med-and-down menuDesktop">
-        <nav class="top-nav amber darken-4">
+    <div class="section scrollspy" id="start" style="padding: 0;"></div>
+    <div class="navbar-fixed hide-on-med-and-down" style="height: 100px">
+        <nav class="top-nav white" style="height: 100px">
             <div class="container">
                 <div class="nav-wrapper">
+                    <div class="row" style="margin-bottom: 0px; margin-top: 5px;">
+                        <a href="/" class="brand-logo"><img src="logoOnebiOrange.png" style="width: 200px;"></a>
+                        <div class="col s7 right">
+                            <div class="right font13" style="line-height: 20px; height: 20px">
+                                <a href="/pl" class="grey-text" style="margin-right: 10px; height: 20px"><strong>PL</strong></a>
+                                <a href="/" class="black-text" style=" height: 20px"><strong>ENG</strong></a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <a href="/en" class="brand-logo"><img src="logo.png" style="max-width: 150px;"></a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="#aktualnosci" class="font13"><i class="mdi-action-view-list right" style="font-size: 25px"></i>News</a></li>
-                            <li><a href="#naszePodejscie" class="font13"><i class="mdi-image-blur-on right" style="font-size: 25px"></i>Our approach</a></li>
-                            <li><a href="#uslugi" class="font13"><i class="mdi-hardware-phonelink right" style="font-size: 25px"></i>Services</a></li>
-                            <li><a href="#kontakt" class="font13"><i class="mdi-maps-place right" style="font-size: 25px"></i>Contact</a></li>
-                            <li><a href="#partnerzy" class="font13"><i class="mdi-social-people-outline right" style="font-size: 25px"></i>Partners</a></li>
-                            <li><a href="#praca" class="font13"><i class="mdi-hardware-laptop-mac right" style="font-size: 25px"></i>Career</a></li>
+                        <ul class="right">
+                            <li>
+                                <a href="#start" class="font13 black-text">
+                                    <!--<i class="mdi-action-view-list right" style="font-size: 25px"></i>-->
+                                    <strong>START</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#aktualnosci" class="font13 black-text">
+                                    <!--<i class="mdi-action-view-list right" style="font-size: 25px"></i>-->
+                                    <strong>NEWS</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#naszePodejscie" class="font13 black-text">
+                                    <!--<i class="mdi-image-blur-on right" style="font-size: 25px;"></i>-->
+                                    <strong>OUR APPROACH</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#uslugi" class="font13 black-text">
+                                    <!--<i class="mdi-hardware-phonelink right" style="font-size: 25px"></i>-->
+                                    <strong>SERVICES</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partnerzy" class="font13 black-text">
+                                    <!--<i class="mdi-social-people-outline right" style="font-size: 25px"></i>-->
+                                    <strong>PARTNERS</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#praca" class="font13 black-text">
+                                    <!--<i class="mdi-hardware-laptop-mac right" style="font-size: 25px"></i>-->
+                                    <strong>JOB</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#kontakt" class="font13 black-text">
+                                    <!--<i class="mdi-maps-place right" style="font-size: 25px"></i>-->
+                                    <strong>CONTACT</strong>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <a href="/" class="waves-effect waves-orange white btn btnLngPl"><span style="color: orangered;">pl</span></a>
-            <a href="/en" class="waves-effect waves-orange white btn btnLngEn"><span style="color: orangered;">en</span></a>
+            <!--<a href="/" class="waves-effect waves-orange white btn btnLngPl"><span style="color: orangered;">pl</span></a>-->
+            <!--<a href="/en" class="waves-effect waves-orange white btn btnLngEn"><span style="color: orangered;">en</span></a>-->
         </nav>
     </div>
     <div class="navbar-fixed hide-on-large-only" style="height: 200px;">
-        <nav class="top-nav amber darken-4" style="height: 200px;">
+        <nav class="top-nav white" style="height: 200px;">
             <div class="container">
                 <div class="nav-wrapper" style="margin-top: 40px">
                     <div class="row">
-                        <a href="" class="brand-logo" style="font-size: 80px; margin-top: 5px"><img src="logo.jpg" style="max-width: 250px;"></a>
-                        <a href="#" data-activates="mobile-menu" class="button-collapse"  style="margin-top: 30px;">
+                        <a href="/" class="brand-logo" style="font-size: 80px; margin-top: 5px"><img src="logoOnebiOrange.png" style="width: 200px; max-width: 250px;"></a>
+                        <a href="#" data-activates="mobile-menu" class="button-collapse black-text"  style="margin-top: 30px;">
                             <i class="mdi-navigation-menu" style="font-size: 80px;"></i>
                         </a>
 
                         <ul class="side-nav" id="mobile-menu">
-                            <li><a href="#aktualnosci" class="waves-effect waves-orange menu-font"><i class="mdi-action-view-list left orange-text" style="font-size: 50px"></i>News</a></li>
+                            <li><a href="#start" class="waves-effect waves-orange menu-font"><i class="mdi-navigation-menu left black-text" style="font-size: 50px"></i>START</a></li>
                             <hr/>
-                            <li><a href="#naszePodejscie" class="waves-effect waves-orange menu-font"><i class="mdi-image-blur-on left orange-text" style="font-size: 50px"></i>Our approach</a></li>
+                            <li><a href="#aktualnosci" class="waves-effect waves-orange menu-font"><i class="mdi-action-view-list left black-text" style="font-size: 50px"></i>NEWS</a></li>
                             <hr/>
-                            <li><a href="#uslugi" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-phonelink left orange-text" style="font-size: 50px"></i>Services</a></li>
+                            <li><a href="#naszePodejscie" class="waves-effect waves-orange menu-font"><i class="mdi-image-blur-on left black-text" style="font-size: 50px"></i>OUR APPROACH</a></li>
                             <hr/>
-                            <li><a href="#kontakt" class="waves-effect waves-orange menu-font"><i class="mdi-maps-place left orange-text" style="font-size: 50px"></i>Contact</a></li>
+                            <li><a href="#uslugi" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-phonelink left black-text" style="font-size: 50px"></i>SERVICES</a></li>
                             <hr/>
-                            <li><a href="#partnerzy" class="waves-effect waves-orange menu-font"><i class="mdi-social-people-outline left orange-text" style="font-size: 50px"></i>Partners</a></li>
+                            <li><a href="#partnerzy" class="waves-effect waves-orange menu-font"><i class="mdi-social-people-outline left black-text" style="font-size: 50px"></i>PARTNERS</a></li>
                             <hr/>
-                            <li><a href="#praca" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-laptop-mac left orange-text" style="font-size: 50px"></i>Career</a></li>
+                            <li><a href="#praca" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-laptop-mac left black-text" style="font-size: 50px"></i>JOB</a></li>
+                            <hr/>
+                            <li><a href="#kontakt" class="waves-effect waves-orange menu-font"><i class="mdi-maps-place left black-text" style="font-size: 50px"></i>CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <a href="/" class="waves-effect waves-orange white btn btnLngPlMobile"><span style="color: orangered;">pl</span></a>
-            <a href="/en" class="waves-effect waves-orange white btn btnLngEnMobile"><span style="color: orangered;">en</span></a>
+            <a href="/pl" class="waves-effect waves-orange white btn btnLngPlMobile"><span style="color: orangered;">pl</span></a>
+            <a href="/" class="waves-effect waves-orange white btn btnLngEnMobile"><span style="color: orangered;">en</span></a>
         </nav>
     </div>
+    <!--<div class="navbar-fixed hide-on-large-only" style="height: 200px;">-->
+        <!--<nav class="top-nav white" style="height: 200px;">-->
+            <!--<div class="container">-->
+                <!--<div class="nav-wrapper" style="margin-top: 40px">-->
+                    <!--<div class="row">-->
+                        <!--<a href="/" class="brand-logo" style="font-size: 80px; margin-top: 5px"><img src="logo.jpg" style="max-width: 250px;"></a>-->
+                        <!--<a href="#" data-activates="mobile-menu" class="button-collapse"  style="margin-top: 30px;">-->
+                            <!--<i class="mdi-navigation-menu" style="font-size: 80px;"></i>-->
+                        <!--</a>-->
+
+                        <!--<ul class="side-nav" id="mobile-menu">-->
+                            <!--<li><a href="#aktualnosci" class="waves-effect waves-orange menu-font"><i class="mdi-action-view-list left orange-text" style="font-size: 50px"></i>START</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#aktualnosci" class="waves-effect waves-orange menu-font"><i class="mdi-action-view-list left orange-text" style="font-size: 50px"></i>NEWS</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#naszePodejscie" class="waves-effect waves-orange menu-font"><i class="mdi-image-blur-on left orange-text" style="font-size: 50px"></i>Our approach</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#uslugi" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-phonelink left orange-text" style="font-size: 50px"></i>Services</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#kontakt" class="waves-effect waves-orange menu-font"><i class="mdi-maps-place left orange-text" style="font-size: 50px"></i>Contact</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#partnerzy" class="waves-effect waves-orange menu-font"><i class="mdi-social-people-outline left orange-text" style="font-size: 50px"></i>Partners</a></li>-->
+                            <!--<hr/>-->
+                            <!--<li><a href="#praca" class="waves-effect waves-orange menu-font"><i class="mdi-hardware-laptop-mac left orange-text" style="font-size: 50px"></i>Career</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<a href="/pl" class="waves-effect waves-orange white btn btnLngPlMobile"><span style="color: orangered;">pl</span></a>-->
+            <!--<a href="/" class="waves-effect waves-orange white btn btnLngEnMobile"><span style="color: orangered;">en</span></a>-->
+        <!--</nav>-->
+    <!--</div>-->
 </template>

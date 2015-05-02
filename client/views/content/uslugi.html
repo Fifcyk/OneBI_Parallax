@@ -1,24 +1,37 @@
 <template name="uslugiList">
-    <ul class="collapsible" data-collapsible="accordion">
+    <div class="row">
         {{#each usluga}}
-            <li>
-                {{> uslugiItem}}
-            </li>
+            {{> uslugiItem}}
         {{/each}}
-    </ul>
+    </div>
 </template>
 
 <template name="uslugiItem">
-    <div class="collapsible-header white">
-        <i class="{{ikona}}" style="font-size: 30px; margin-right: 20px;"></i>{{{title}}}
-    </div>
-    <div class="collapsible-body white" id="kontenerUslugi">
-        {{{body}}}
+    <div class="col s4 text-center marginBottom30">
+        <img src="{{image}}" class="iconsUslugi">
+        <p class="uslugiBoxHeader">{{{title}}}</p>
+        <hr class="hrUslugiBoxGora">
+        <br>
+        <span>
+            {{{body}}}
+        </span>
     </div>
 </template>
 
 <template name="uslugiOpis">
-    <div class="card-panel white " style="width: 50%; min-height: 260px; margin-top: 70px; margin-left: 25%; margin-right: 25%">
-        {{{uslugaOpis}}}
+    <div class="row text-center">
+        <span class="MainHeader">{{{tytul}}}</span>
+        <br><div class="hrOrangeMain"></div>
+    </div>
+    <div class="row">
+        <div class="col s2"><p></p></div>
+        <div class="col s4 grey-text"><span>{{{uslugaOpis}}}</span></div>
+        <div class="col s4 grey-text"><span>{{{uslugaOpis2}}}</span></div>
+        <div class="col s2"><p></p></div>
+    </div>
+    <div class="row">
+        <div class="col s2"><p></p></div>
+        <div class="col s8"><hr></div>
+        <div class="col s2"><p></p></div>
     </div>
 </template>

@@ -23,9 +23,23 @@ Template.uslugiItem.helpers({
             var icon=this.icon;
         }
             return icon+" orange-text";
+    },
+    image: function()
+    {
+        return this.image.url;
     }
 });
 Template.uslugiOpis.helpers({
+    tytul: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.uslugi.collection.findOne().title;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.services.collection.findOne().title;
+        }
+    },
     uslugaOpis: function()
     {
         var jezyk = Session.get('version');
@@ -34,6 +48,16 @@ Template.uslugiOpis.helpers({
         }
         else if(jezyk === 'English') {
             return orion.entities.services.collection.findOne().body;
+        }
+    },
+    uslugaOpis2: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.uslugi.collection.findOne().body2;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.services.collection.findOne().body2;
         }
     }
 });

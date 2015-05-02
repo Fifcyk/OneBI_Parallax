@@ -8,6 +8,10 @@ orion.addEntity('praca', {
         label: 'Stanowisko',
         optional: false
     },
+        bodyShort:orion.attribute('froala',{
+            label:'Treść Krótka',
+            optional:true
+        }),
         body:orion.attribute('froala',{
             label:'Treść',
             optional:true
@@ -21,7 +25,7 @@ orion.addEntity('praca', {
             singularName: 'pozycję',
             tableColumns: [
                 { data:'title', title: 'Stanowisko' },
-                {data:'body',title:'Treść'}
+                {data:'bodyShort',title:'Treść'}
             ]
         }
 );

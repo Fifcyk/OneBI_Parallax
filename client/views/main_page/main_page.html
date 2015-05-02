@@ -7,66 +7,56 @@
             If you continue without changing your settings, we'll assume that you are happy to receive all cookies on the website.
         </span>
     </div>
-    <div class="section scrollspy" id="aktualnosci" style="padding: 0;"></div>
-    {{>aktualnosciList}}
-    <div class="section scrollspy parallax-container" id="naszePodejscie">
-        <div class="parallax"><img src="content_background.jpg"></div>
-        {{>podejscieItem}}
-        <div class="section scrollspy" id="uslugi" style="padding: 0;"></div>
+    <div class="parallax-container" style="height: 500px">
+        <div class="parallax"><img src="header.png"></div>
+        {{>header}}
+        <div class="section scrollspy" id="aktualnosci" style="padding: 0;"></div>
     </div>
     <div class="white z-depth-5">
-        <div class="container" style="padding-bottom: 50px; padding-top: 50px;">
-            <div class="hide-on-med-and-down">
-                {{>uslugiList}}
+        <div class="container conteinerPad50">
+            <div class="row text-center">
+                <span class="MainHeader">NEWS</span>
+                <br><div class="hrOrangeMain"></div>
             </div>
-            <div class="hide-on-large-only font30">
-                {{>uslugiList}}
-            </div>
+            {{>aktualnosciList}}
+            <div class="section scrollspy" id="naszePodejscie" style="padding: 0;"></div>
         </div>
     </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="content_background.jpg"></div>
-        {{> uslugiOpis}}
-        <div class="section scrollspy" id="kontakt" style="padding: 0;"></div>
-    </div>
-    <div class="parallax-container" style="padding-top: 0px">
-        <div class="map-container">
-            {{> googleMap name="onebiMap" options=onebiMapOptions}}
+    <div class="amber darken-4 z-depth-5" >
+        <div class="container conteinerPad50">
+            {{>podejscieItem}}
+            <div class="section scrollspy" id="uslugi" style="padding: 0;"></div>
         </div>
     </div>
     <div class="white z-depth-5">
-        <div class="container">
-            <div class="hide-on-med-and-down">
-                <span class="grey-text text-darken-3 lighten-3">{{>kontaktList}}</span>
-            </div>
-            <div class="hide-on-large-only font30">
-                <span class="grey-text text-darken-3 lighten-3">{{>kontaktList}}</span>
-            </div>
-        </div>
-        <div class="section scrollspy" id="partnerzy"></div>
-    </div>
-    <div class="parallax-container" >
-        <div class="parallax"><img src="content_background.jpg"></div>
-    </div>
-    <div class="white z-depth-5 containers">
-        <div class="container">
-            <div class="hide-on-med-and-down">
-                {{>partnerzyList}}
-            </div>
-            <div class="hide-on-large-only font30">
-                {{>partnerzyList}}
-            </div>
+        <div class="container conteinerPad50">
+            {{>uslugiOpis}}
+            {{>uslugiList}}
+            <div class="section scrollspy" id="partnerzy" style="padding: 0;"></div>
         </div>
     </div>
-    <div class="section scrollspy parallax-container"  id="praca">
-        <div class="parallax"><img src="content_background.jpg"></div>
+    <div class="white z-depth-5">
+        <div class="container conteinerPad50">
+            {{>partnerzyList}}
+            <div class="section scrollspy" id="praca" style="padding: 0;"></div>
+        </div>
     </div>
-    <div class="white containers">
-        <div class="container">
-            <div>
-                {{>pracaList}}
+    <div class="white z-depth-5">
+        <div class="container conteinerPad50">
+            {{>pracaList}}
+            <div class="section scrollspy" id="kontakt" style="padding: 0;"></div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="container conteinerPad50">
+            <div class="row text-center">
+                <span class="MainHeader">CONTACT</span>
+                <br><div class="hrOrangeMain"></div>
+            </div><br>
+            {{>kontaktList}}
+            <div class="map-container">
+                {{> googleMap name="onebiMap" options=onebiMapOptions}}
             </div>
-
         </div>
     </div>
 </template>

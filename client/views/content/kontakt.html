@@ -1,23 +1,14 @@
 <template name="kontaktList">
-    <div class="kontakty">
-        <div class="row" style="margin-bottom: 0px">
-            {{#each kontakty}}
-                <div class="col s12 m12 l6">
-                    <div class="card-panel grey darken-2" style="text-align: center">
-                      <span class="white-text">
-                          {{> kontaktItem}}
-                      </span>
-                    </div>
-                </div>
-            {{/each}}
-        </div>
+    <div class="kontakt-container">
+    {{#each kontakty}}
+          <span class="black-text">
+              {{> kontaktItem}}
+          </span>
+          <hr class="hrKontakt"><br>
+    {{/each}}
     </div>
 </template>
 
 <template name="kontaktItem">
-    <div class="kontakt">
-        <div class="kontakt-content">
-            {{{body}}}
-        </div>
-    </div>
+        {{{body}}}
 </template>

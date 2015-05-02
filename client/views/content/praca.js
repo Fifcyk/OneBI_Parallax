@@ -1,3 +1,37 @@
+Template.pracaOpis.helpers({
+    tytul: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.pracaOpis.collection.findOne().title;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.jobsDescription.collection.findOne().title;
+        }
+    },
+    pracaOpis: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.pracaOpis.collection.findOne().body;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.jobsDescription.collection.findOne().body;
+        }
+    },
+    pracaOpis2: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return orion.entities.pracaOpis.collection.findOne().body2;
+        }
+        else if(jezyk === 'English') {
+            return orion.entities.jobsDescription.collection.findOne().body2;
+        }
+    }
+});
+
+
 Template.pracaList.helpers({
     stanowisko: function()
     {
@@ -19,6 +53,16 @@ Template.pracaList.helpers({
     bodyC:function()
     {
         return Session.get("bodyC");
+    },
+    szczegoly: function()
+    {
+        var jezyk = Session.get('version');
+        if(jezyk === 'Polski') {
+            return 'SZCZEGÓŁY OFERTY';
+        }
+        else if(jezyk === 'English') {
+            return 'CHECK DETAILS';
+        }
     }
 });
 
