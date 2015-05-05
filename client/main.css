@@ -212,8 +212,39 @@ a:hover, a:focus {
     padding:15px;
     margin:1em 1em 3em;
     color:lightgrey;
-    width: 347px;
-    height: 270px;
+    width: 300px;
+    height: 250px;
+    background:#fff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.triangle-right-med {
+    /*position: relative;*/
+    display: inline-block;
+    padding:15px;
+    margin:1em 1em 3em;
+    color:lightgrey;
+    width: 250px;
+    height: 200px;
+    background:#fff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.triangleBox-med {
+    height: 100px;
+    color: grey;
+}
+
+.triangle-right-small {
+    /*position: relative;*/
+    display: inline-block;
+    padding:15px;
+    margin:1em 6em 3em 6em;
+    color:lightgrey;
+    width: 300px;
+    height: 250px;
     background:#fff;
     border-width: 1px;
     border-style: solid;

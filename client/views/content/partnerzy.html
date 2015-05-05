@@ -2,14 +2,42 @@
     {{> partnerzyOpis}}
     <div class="row">
         {{#each partnerzyLista}}
-            <div class="col s3 text-center marginBottom30">
-                <div class="partnerzyBox">
-                    <div class="graphicBoxPartnerzy">
-                        <img src="{{imagee}}" class="graphicPartnerzy">
+            <div class="hide-on-med-and-down">
+                <div class="col s4 text-center marginBottom30">
+                    <div class="partnerzyBox">
+                        <div class="graphicBoxPartnerzy">
+                            <img src="{{imagee}}" class="graphicPartnerzy">
+                        </div>
+                        <p class="partnerzyBoxHeader">{{{title}}}</p>
+                        <hr class="hrPartnerzyBoxGora">
+                        <span>{{{body}}}</span>
                     </div>
-                    <p class="partnerzyBoxHeader">{{{title}}}</p>
-                    <hr class="hrPartnerzyBoxGora">
-                    <span>{{{body}}}</span>
+                </div>
+                <!--<div class="col s1"><p></p></div>-->
+            </div>
+            <div class="hide-on-large-only hide-on-small-only">
+                <div class="col s6 text-center marginBottom30">
+                    <div class="partnerzyBox">
+                        <div class="graphicBoxPartnerzy">
+                            <img src="{{imagee}}" class="graphicPartnerzy">
+                        </div>
+                        <p class="partnerzyBoxHeader">{{{title}}}</p>
+                        <hr class="hrPartnerzyBoxGora">
+                        <span>{{{body}}}</span>
+                    </div>
+                </div>
+                <!--<div class="col s2"><p></p></div>-->
+            </div>
+            <div class="hide-on-med-and-up">
+                <div class="col s12 text-center marginBottom30">
+                    <div class="partnerzyBox">
+                        <div class="graphicBoxPartnerzy">
+                            <img src="{{imagee}}" class="graphicPartnerzy">
+                        </div>
+                        <p class="partnerzyBoxHeader">{{{title}}}</p>
+                        <hr class="hrPartnerzyBoxGora">
+                        <span>{{{body}}}</span>
+                    </div>
                 </div>
             </div>
         {{/each}}

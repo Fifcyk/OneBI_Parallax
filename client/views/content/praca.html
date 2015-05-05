@@ -1,43 +1,40 @@
 <template name="pracaList">
     {{>pracaOpis}}
-    <!--<ul class="collection" style="margin-top: 50px; width: 80%; margin-left: 10%; margin-right: 10%;">-->
-        <!--{{#each stanowisko}}-->
-            <!--<a href="#modal1" style="text-transform: none; text-align: right; height: 40px; padding-top: 10px" class="collection-item waves-effect waves-light btn modal-trigger grey darken-2 white-text">-->
-                <!--<span class="left">{{title}}</span>-->
-                <!--<i class="mdi-content-send"></i>-->
-            <!--</a>-->
-            <!--<div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">-->
-                    <!--<p>{{{bodyC}}}</p>-->
-            <!--</div>-->
-        <!--{{/each}}-->
-    <!--</ul>-->
-    <!--<ul class="collection">-->
-        <!--{{#each stanowisko}}-->
-            <!--<a href="#modal1" class="collection-item modal-trigger">-->
-                <!--<span class="left">{{title}}</span>-->
-                <!--<i class="mdi-content-send"></i>-->
-            <!--</a>-->
-            <!--<div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">-->
-                <!--<p>{{{bodyC}}}</p>-->
-            <!--</div>-->
-        <!--{{/each}}-->
-    <!--</ul>-->
+
     <div class="row">
     {{#each stanowisko}}
-        <div class="col s1"><p></p></div>
-        <div class="col s4 text-center">
-            <p class="uslugiBoxHeader">{{{title}}}</p>
-            <hr class="hrUslugiBoxGora">
-            <span style="color: grey">{{{bodyShort}}}</span>
-            <hr class="hrUslugiBoxGora">
-            <a href="#modal1" class="collection-item modal-trigger">
-                <p class="pracaSzczegoly">{{{szczegoly}}}</p>
-            </a>
-            <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">
-                <p>{{{bodyC}}}</p>
+        <div class="hide-on-small-only">
+            <!--<div class="col s1"><p></p></div>-->
+            <div class="col s6 text-center">
+                <p class="uslugiBoxHeader">{{{title}}}</p>
+                <hr class="hrUslugiBoxGora">
+                <span style="color: grey">{{{bodyShort}}}</span>
+                <hr class="hrUslugiBoxGora">
+                <a href="#modal1" class="collection-item modal-trigger">
+                    <p class="pracaSzczegoly">{{{szczegoly}}}</p>
+                </a>
+                <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <p>{{{bodyC}}}</p>
+                </div>
+                <br><br>
+            </div>
+            <!--<div class="col s1" style="height: 200px"><p></p></div>-->
+        </div>
+        <div class="hide-on-med-and-up">
+            <div class="col s12 text-center">
+                <p class="uslugiBoxHeader">{{{title}}}</p>
+                <hr class="hrUslugiBoxGora">
+                <span style="color: grey">{{{bodyShort}}}</span>
+                <hr class="hrUslugiBoxGora">
+                <a href="#modal1" class="collection-item modal-trigger">
+                    <p class="pracaSzczegoly">{{{szczegoly}}}</p>
+                </a>
+                <div id="modal1" class="modal" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <p>{{{bodyC}}}</p>
+                </div>
+                <br><br>
             </div>
         </div>
-        <div class="col s1"><p></p></div>
     {{/each}}
     </div>
 </template>

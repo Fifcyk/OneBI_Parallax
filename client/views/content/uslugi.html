@@ -7,14 +7,39 @@
 </template>
 
 <template name="uslugiItem">
-    <div class="col s4 text-center marginBottom30">
-        <img src="{{image}}" class="iconsUslugi">
-        <p class="uslugiBoxHeader">{{{title}}}</p>
-        <hr class="hrUslugiBoxGora">
-        <br>
-        <span>
-            {{{body}}}
-        </span>
+    <div class="hide-on-med-and-down">
+        <div class="col s4 text-center marginBottom30" style="height: 350px">
+            <img src="{{image}}" class="iconsUslugi">
+            <p class="uslugiBoxHeader">{{{title}}}</p>
+            <hr class="hrUslugiBoxGora">
+            <br>
+            <span>
+                {{{body}}}
+            </span>
+        </div>
+    </div>
+    <div class="hide-on-large-only hide-on-small-only">
+        <div class="col s6 text-center marginBottom30" style="height: 350px">
+            <img src="{{image}}" class="iconsUslugi">
+            <p class="uslugiBoxHeader">{{{title}}}</p>
+            <hr class="hrUslugiBoxGora">
+            <br>
+            <span>
+                {{{body}}}
+            </span>
+        </div>
+        <!--<div class="col s1"><p></p></div>-->
+    </div>
+    <div class="hide-on-med-and-up">
+        <div class="col s12 text-center marginBottom30" style="height: 350px">
+            <img src="{{image}}" class="iconsUslugi">
+            <p class="uslugiBoxHeader">{{{title}}}</p>
+            <hr class="hrUslugiBoxGora">
+            <br>
+            <span>
+                {{{body}}}
+            </span>
+        </div>
     </div>
 </template>
 

@@ -1,28 +1,106 @@
 <template name="aktualnosciList">
     {{> aktualnosciOpis}}
-    {{#each aktualnosci}}
-        {{> aktualnosciItem}}
-    {{/each}}
+    <div class="row">
+        {{#each aktualnosci}}
+            {{> aktualnosciItem}}
+        {{/each}}
+    </div>
 </template>
 
 <template name="aktualnosciItem">
-    <div class="triangle-right">
-        <span class="aktualnosciHeader">{{{tytul}}}</span>
-        <br>
-        <hr class="hrTriangleGora">
-        <br>
-        <div class="triangleBox">
-            <span>
-                {{{krotkaTresc}}}
-            </span>
+    <!--<div class="hide-on-med-and-down">-->
+        <!--<div class="triangle-right">-->
+            <!--<span class="aktualnosciHeader">{{{tytul}}}</span>-->
+            <!--<br>-->
+            <!--<hr class="hrTriangleGora">-->
+            <!--<br>-->
+            <!--<div class="triangleBox">-->
+                <!--<span>-->
+                    <!--{{{krotkaTresc}}}-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--<hr>-->
+            <!--<i>{{{createdAt}}}</i>-->
+            <!--<a href="#modal2" class="collection-itemA modal-trigger">-->
+                <!--<span class="aktualnosciStopka">{{{czytaj}}}</span>-->
+            <!--</a>-->
+            <!--<div id="modal2" class="modal black-text" style="padding-left:30px;padding-top: 30px;position: fixed;">-->
+                <!--<p>{{{bodyA}}}</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="hide-on-large-only">-->
+        <!--cdcsa-->
+    <!--</div>-->
+    <div class="hide-on-med-and-down">
+        <div class="col s4">
+            <div class="triangle-right">
+                <span class="aktualnosciHeader">{{{tytul}}}</span>
+                <br>
+                <hr class="hrTriangleGora">
+                <br>
+                <div class="triangleBox">
+                        <span>
+                            {{{krotkaTresc}}}
+                        </span>
+                </div>
+                <hr>
+                <i>{{{createdAt}}}</i>
+                <a href="#modal2" class="collection-itemA modal-trigger">
+                    <span class="aktualnosciStopka">{{{czytaj}}}</span>
+                </a>
+                <div id="modal2" class="modal black-text" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <p>{{{bodyA}}}</p>
+                </div>
+            </div>
         </div>
-        <hr>
-        <i>{{{createdAt}}}</i>
-        <a href="#modal2" class="collection-itemA modal-trigger">
-            <span class="aktualnosciStopka">{{{czytaj}}}</span>
-        </a>
-        <div id="modal2" class="modal black-text" style="padding-left:30px;padding-top: 30px;position: fixed;">
-            <p>{{{bodyA}}}</p>
+        <!--<div class="col s1"><p></p></div>-->
+    </div>
+    <div class="hide-on-large-only hide-on-small-only">
+        <div class="col s6">
+            <div class="triangle-right-med">
+                <span class="aktualnosciHeader">{{{tytul}}}</span>
+                <br>
+                <hr class="hrTriangleGora">
+                <br>
+                <div class="triangleBox-med">
+                    <span>
+                        {{{krotkaTresc}}}
+                    </span>
+                </div>
+                <hr>
+                <i>{{{createdAt}}}</i>
+                <a href="#modal2" class="collection-itemA modal-trigger">
+                    <span class="aktualnosciStopka">{{{czytaj}}}</span>
+                </a>
+                <div id="modal2" class="modal black-text" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <p>{{{bodyA}}}</p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col s1" style="height: 200px"><p></p></div>-->
+    </div>
+    <div class="hide-on-med-and-up">
+        <div class="col s12">
+            <div class="triangle-right-small">
+                <span class="aktualnosciHeader">{{{tytul}}}</span>
+                <br>
+                <hr class="hrTriangleGora">
+                <br>
+                <div class="triangleBox">
+                    <span>
+                        {{{krotkaTresc}}}
+                    </span>
+                </div>
+                <hr>
+                <i>{{{createdAt}}}</i>
+                <a href="#modal2" class="collection-itemA modal-trigger">
+                    <span class="aktualnosciStopka">{{{czytaj}}}</span>
+                </a>
+                <div id="modal2" class="modal black-text" style="padding-left:30px;padding-top: 30px;position: fixed;">
+                    <p>{{{bodyA}}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
